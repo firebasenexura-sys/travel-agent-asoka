@@ -1,0 +1,20 @@
+runtime: nodejs20
+
+build:
+  command: npm run build
+
+run:
+  command: npm start
+
+env:
+  variables:
+    NEXT_PUBLIC_FIREBASE_API_KEY: "AIzaSyBdKqLcrk_iA_8kXCVEcN3r5uDBiZTly3Y"
+    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: "travelagent-asoka.firebaseapp.com"
+    NEXT_PUBLIC_FIREBASE_PROJECT_ID: "travelagent-asoka"
+    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: "travelagent-asoka.firebasestorage.app"
+    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: "1083864482880"
+    NEXT_PUBLIC_FIREBASE_APP_ID: "1:1083864482880:web:25cbd9961295d9c3900ba5"
+
+# (Opsional) kurangi cold start:
+# scaling:
+#   minInstances: 1
