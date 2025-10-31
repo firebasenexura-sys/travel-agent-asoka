@@ -1,7 +1,7 @@
 // Ini adalah file: app/admin/dashboard/bookings/page.tsx
 // Halaman untuk melihat dan mengelola semua pesanan (VERSI 5 - Filter Tanggal & Export PDF)
 "use client";
-
+export const dynamic = 'force-dynamic';
 import { useState, useEffect, useCallback, useMemo, JSX } from "react"; // Tambah useMemo
 import Link from "next/link";
 import { useRouter } from "next/navigation";
