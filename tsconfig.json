@@ -22,11 +22,20 @@
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
+    "app/**/*",
+    "pages/**/*",
+    "components/**/*",
+    "src/**/*",
+    "lib/**/*",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
-, "next.config.mjs"  ],
-  "exclude": ["node_modules"]
+    "next.config.mjs"
+  ],
+  "exclude": [
+    "node_modules",
+    "functions",
+    "functions/**/*",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
 }
